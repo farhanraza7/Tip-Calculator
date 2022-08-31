@@ -6,37 +6,39 @@
 }
 body{
     font-family: 'Redressed', cursive;
-    height: 100vh;
     font-size: 22px;
     position: relative;
-    background: #a8ff78;  
-    background: -webkit-linear-gradient(to top, #78ffd6, #a8ff78);
-    background: linear-gradient(to top, #78ffd6, #a8ff78);
+    background-image: url(./shawnanggg-nmpW_WwwVSc-unsplash.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
 }
 .container{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-40%,-40%);
     width: 450px;
-    /* background-color: #FFF; */
-    border-radius: 18px;
+    border-radius: 50px 20px;
+    border: 3px solid black;
     text-align: center;
-    box-shadow: 1px 1px 13px rgb(0 0 0 / 10%);
-    background: #A1FFCE;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #FAFFD1, #A1FFCE);
-    background: linear-gradient(to top, #FAFFD1, #A1FFCE);
+    box-shadow: 1px 1px 13px rgb(0 0 0 / 100%);
+
+    
+
 
 }
 h1{
-    /* background-color: #cef5e4; */
+    color: #fff;
     padding: 10px 0;
     font-size: 28px;
     border-radius: 18px;
 }
 p{
-    color: #7e7e7e;
+    color: #8e9eab;;
 }
 .control{
     margin: 25px 0;
@@ -45,16 +47,16 @@ input{
     border: none;
     outline: none;
     text-align: center;
-    border-bottom: 1px solid #16a465;
-    color: #16a465;
+    border-bottom: 1px solid #000000;
+    color: #000000;
     font-size: 28px;
     margin-top: 20px;
 }
 select{
     border: none;
     outline: none;
-    border: 1px solid #16a465;
-    color: #7e7e7e;
+    border: 1px solid #000000;
+    color: #000000;
     font-size: 18px;
     margin-top: 20px;
     padding: 11px 34px;
@@ -63,34 +65,59 @@ select{
 }
 button#calculate{
     color: white;
-    background: #16a465;
     border: 1px solid transparent;
     font-size: 17px;
     border-radius: 25px;
     padding: 14px 29px;
     margin: 25px;
     transition: all .3s ease;
+    background: #8e9eab;
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
 }
 button#calculate:hover{
-    color: #16a465;
-    border-color: #16a465;
+    color: #8e9eab;
+    border-color: #8e9eab;
     background: white;
 }
 .totalTip{
-    /* background-color: #cef5e4; */
     border-radius: 18px;
     padding: 25px 0 35px;
-    background: #AAFFA9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8e9eab;
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
 
 
 }
 p.tip{
     font-size: 38px;
-    color: #009855;
+    color: #fff;
     margin-top: 10px;
 }
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container{
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+    }
+
+    h1{     
+        padding: 10px 0;
+        font-size: 28px;
+    }
+
+    .control{
+        margin: 15px 0px;
+    }
+  } 
 
 
 
